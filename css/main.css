@@ -1,0 +1,41 @@
+body {
+	text-align: center;
+}
+
+
+ul li {
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.title {
+	color: #050305;
+	font-family: 'Monofett', cursive;
+	font-size: 75px;
+}
+
+.background {
+	 background-image: url("../img/cover2.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+}
+
+.back {
+	background-color: white;
+}
+
+#name {
+	color: #FF0303;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#month,
+#forecast,
+#personality,
+#love {
+	color: #FFA200;
+	font-family: 'Rajdhani', sans-serif;;
+	font-size: 20px;
+}
