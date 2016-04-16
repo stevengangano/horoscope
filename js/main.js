@@ -109,14 +109,13 @@ function zodiac (sign) {
 		var description = document.getElementById('personality')
 		var future = document.getElementById('forecast') 
 		var loveAndsex = document.getElementById('love')
-
 	switch (sign) {
 	case 'Aries'  :
-		name.innerHTML =  zodiacSigns[0].name
-		month.innerHTML = zodiacSigns[0].month
-		description.innerHTML = "Personality: " + zodiacSigns[0].personality
-		future.innerHTML = "Your forecast: "  + zodiacSigns[0].forecast
-		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[0].love
+		name.innerHTML =  zodiacSigns[0].name //displays the zodiac name
+		month.innerHTML = zodiacSigns[0].month // displays the zodiac month
+		description.innerHTML = "Personality: " + zodiacSigns[0].personality // displays zodiac personality
+		future.innerHTML = "Your forecast: "  + zodiacSigns[0].forecast  // displays zodiacs future
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[0].love // displays zodiac love/sex
 		break
 	case 'Taurus'  :
 		name.innerHTML = zodiacSigns[1].name
@@ -184,7 +183,6 @@ function zodiac (sign) {
 		description.innerHTML = "Personality: " + zodiacSigns[11].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[11].forecast
 		break
-
 		}
 	}
 

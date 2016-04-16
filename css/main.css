@@ -14,6 +14,10 @@ ul li {
 	font-size: 75px;
 }
 
+.margin {
+	top: 15px;
+}
+
 .background {
 	 background-image: url("../img/cover2.jpg");
 	background-repeat: no-repeat;
@@ -35,7 +39,7 @@ ul li {
 #forecast,
 #personality,
 #love {
-	color: #FFA200;
+	color: black;
 	font-family: 'Rajdhani', sans-serif;;
-	font-size: 20px;
+	font-size: 15px;
 }
