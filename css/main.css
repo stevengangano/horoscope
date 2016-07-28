@@ -2,7 +2,6 @@ body {
 	text-align: center;
 }
 
-
 ul li {
 	display: inline-block;
 	margin-top: 50px;
@@ -24,6 +23,7 @@ ul li {
   background-size: cover;
   text-align: center;
   margin: 0;
+  height: 100%;
 }
 
 .back {
@@ -43,3 +43,5 @@ ul li {
 	font-family: 'Rajdhani', sans-serif;;
 	font-size: 15px;
 }
+
+
