@@ -1,0 +1,34 @@
+@media (max-width: 470px) {
+	#aries,
+	#taurus,
+	#gemini,
+	#cancer,
+	#leo,
+	#virgo,
+	#libra,
+	#scorpio,
+	#sagittarius,
+	#capricorn,
+	#aquarius,
+	#pisces {
+		display: none;
+	}
+
+	#aries-sm,
+	#taurus-sm,
+	#gemini-sm,
+	#cancer-sm,
+	#leo-sm,
+	#virgo-sm,
+	#libra-sm,
+	#scorpio-sm,
+	#sagittarius-sm,
+	#capricorn-sm,
+	#aquarius-sm,
+	#pisces-sm {
+		display: inline-block;	
+		background-color: black;
+		border-radius: 5px;
+
+	}
+}

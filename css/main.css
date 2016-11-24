@@ -1,5 +1,11 @@
 body {
-	text-align: center;
+  text-align: center;
+  margin: 0px auto;
+}
+
+html {
+  font-size: 100px;
+  text-rendering: optimizeLegibility;
 }
 
 ul li {
@@ -10,7 +16,7 @@ ul li {
 .title {
 	color: #050305;
 	font-family: 'Monofett', cursive;
-	font-size: 75px;
+	font-size: 375%;
 }
 
 .margin {
@@ -18,16 +24,12 @@ ul li {
 }
 
 .background {
-	 background-image: url("../img/cover2.jpg");
-	background-repeat: no-repeat;
+  background-image: url("../img/cover2.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   margin: 0;
   height: 100%;
-}
-
-.back {
-	background-color: white;
 }
 
 #name {
@@ -44,4 +46,40 @@ ul li {
 	font-size: 15px;
 }
 
+#month{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.aries,
+.taurus,
+.gemini,
+.cancer,
+.leo,
+.virgo,
+.libra,
+.scorpio,
+.sagittarius,
+.capricorn,
+.aquarius,
+.pisces{
+	background-color: black;
+	border-radius: 5px;
+}
+
+#aries-sm,
+#taurus-sm,
+#gemini-sm,
+#cancer-sm,
+#leo-sm,
+#virgo-sm,
+#libra-sm,
+#scorpio-sm,
+#sagittarius-sm,
+#capricorn-sm,
+#aquarius-sm,
+#pisces-sm
+ {
+	display: none;
+}
 

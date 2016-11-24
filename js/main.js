@@ -99,9 +99,7 @@ var Pisces = {
 	
 }
 
-
 var zodiacSigns = [Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces]
-
 
 function zodiac (sign) {
 		var name = document.getElementById('name')
@@ -122,66 +120,77 @@ function zodiac (sign) {
 		month.innerHTML = zodiacSigns[1].month
 		description.innerHTML = "Personality: " + zodiacSigns[1].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[1].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[1].love // displays zodiac love/sex
 		break
 	case 'Gemini'  :
 		name.innerHTML = zodiacSigns[2].name
 		month.innerHTML = zodiacSigns[2].month
 		description.innerHTML = "Personality: " + zodiacSigns[2].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[2].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[2].love // displays zodiac love/sex
 		break
 	case 'Cancer'  :
 		name.innerHTML = zodiacSigns[3].name
 		month.innerHTML = zodiacSigns[3].month
 		description.innerHTML = "Personality: " +  zodiacSigns[3].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[3].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[3].love // displays zodiac love/sex
 		break
 	case 'Leo'  :
 		name.innerHTML = zodiacSigns[4].name
 		month.innerHTML = zodiacSigns[4].month
 		description.innerHTML =  "Personality: " + zodiacSigns[4].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[4].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[4].love // displays zodiac love/sex
 		break
 	case 'Virgo'  :
 		name.innerHTML = zodiacSigns[5].name
 		month.innerHTML = zodiacSigns[5].month
 		description.innerHTML =  "Personality: " + zodiacSigns[5].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[5].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[5].love // displays zodiac love/sex
 		break
 	case 'Libra'  :
 		name.innerHTML = zodiacSigns[6].name
 		month.innerHTML = zodiacSigns[6].month
 		description.innerHTML =  "Personality: " + zodiacSigns[6].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[6].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[6].love // displays zodiac love/sex
 		break
 	case 'Scorpio'  :
 		name.innerHTML = zodiacSigns[7].name
 		month.innerHTML = zodiacSigns[7].month
 		description.innerHTML = "Personality: " + zodiacSigns[7].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[7].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[7].love // displays zodiac love/sex
 		break
 	case 'Sagittarius'  :
 		name.innerHTML = zodiacSigns[8].name
 		month.innerHTML = zodiacSigns[8].month
 		description.innerHTML =  "Personality: " + zodiacSigns[8].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[8].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[8].love 
 		break
 	case 'Capricorn'  :
 		name.innerHTML = zodiacSigns[9].name
 		month.innerHTML = zodiacSigns[9].month
 		description.innerHTML = "Personality: " +  zodiacSigns[9].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[9].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[9].love 
 		break
 	case 'Aquarius'  :
 		name.innerHTML = zodiacSigns[10].name
 		month.innerHTML = zodiacSigns[10].month
 		description.innerHTML = "Personality: " +  zodiacSigns[10].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[10].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[10].love 
 		break
 	case 'Pisces'  :
 		name.innerHTML = zodiacSigns[11].name
 		month.innerHTML = zodiacSigns[11].month
 		description.innerHTML = "Personality: " + zodiacSigns[11].personality
 		future.innerHTML = "Your forecast: "  + zodiacSigns[11].forecast
+		loveAndsex.innerHTML = "Love and Sex: " + zodiacSigns[11].love 
 		break
 		}
 	}

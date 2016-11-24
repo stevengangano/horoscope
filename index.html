@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel = "stylesheet" href="css/main.css">
-
+	<link rel = "stylesheet" href="css/responsive.css">
 	<link rel='stylesheet' href='css/animate.min.css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Syncopate:700' rel='stylesheet' type='text/css'>
@@ -19,6 +19,9 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63Jsolar()5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+	<!-- Jquery -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
@@ -26,88 +29,117 @@
 
 <body class='background'>
 	<div class = "container">
-
-		<h1 class='title'> Horoscopes </h1>
-		
+		<h1 class='title text-center'> Horoscope Selector </h1>
 			<ul>
-				<div class = "row">
-					<div class="col-lg-7 col-md-7 col-sm-7">
+				<div class = "row text-center">
+					<div class="col-lg-7 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
 						<!-- Aries -->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Aries" id='Aries' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/aries.jpeg' alt='Aries'> </li>
-					
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Aries" id='Aries' onclick='zodiac(this.id)'>
+							<li> <img src='img/aries.png' class="aries img-responsive" id="aries" alt='Aries' > </li>
+							<li> <img src='img/aries-sm.png' class="img-responsive" id="aries-sm" alt='Aries' > </li>
+						</a></button>
+
 						<!-- Taurus-->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Taurus" id='Taurus' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/taurus.jpg' alt='Taurus'> </li>
-					
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Taurus" id='Taurus' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/taurus.png' class="taurus img-responsive" id="taurus" alt='Taurus'> 
+							</li>
+							<li> <img src='img/taurus-sm.png' class="img-responsive" id="taurus-sm" alt='Taurus-sm' > </li>
+						</a>
+
 						<!-- Gemini -->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Gemini" id='Gemini' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/gemini.jpg' alt='Gemini'> </li>
-					
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Gemini" id='Gemini' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/gemini.png' class="gemini img-responsive" id="gemini" alt='Gemini'> 
+							</li>
+							<li> <img src='img/gemini-sm.png' class="img-responsive" id="gemini-sm" alt='Gemini-sm' > </li>
+						</a>
+
 						<!-- Cancer -->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Cancer" id='Cancer' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/cancer.jpg' alt='Cancer'> </li>
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Cancer" id='Cancer' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/cancer.png' class="cancer img-responsive" id="cancer" alt='Cancer'> </li>
+							<li> <img src='img/cancer-sm.png' class="img-responsive" id="cancer-sm" alt='Cancer-sm' > </li>
+						</a>
 					
 						<!-- Leo -->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Leo" id='Leo' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/leo.jpg' alt='Leo'> </li>
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Leo" id='Leo' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/leo.png' class="leo img-responsive" id="leo" alt='Leo'> </li>
+							<li> <img src='img/leo-sm.png' class="img-responsive" id="leo-sm" alt='Leo-sm' > </li>
+						</a>
 					
 						<!-- Virgo -->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Virgo" id='Virgo' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/virgo.jpg' alt='Virgo'> </li>
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Virgo" id='Virgo' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/virgo.png' class="virgo img-responsive" id="virgo" alt='Virgo'> </li>
+							<li> <img src='img/virgo-sm.png' class="img-responsive" id="virgo-sm" alt='Virgo-sm' > </li>
+						</a>
 					
 						<!-- Libra -->
 						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Libra" id='Libra' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/libra.jpg' alt='Libra'> </li>
+							<li> <img src = 'img/libra.png' class="libra img-responsive" id="libra" alt='Libra'> </li>
+							<li> <img src='img/libra-sm.png' class="img-responsive" id="libra-sm" alt='Libra-sm' > </li>
+						</a>
 					
 						<!-- Scorpio -->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title='Scorpio' id='Scorpio' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/scorpio.jpg' alt='Scorpio'> </li>
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title='Scorpio' id='Scorpio' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/scorpio.png' class="scorpio img-responsive" id="scorpio" alt='Scorpio'> </li>
+							<li> <img src='img/scorpio-sm.png' class="img-responsive" id="scorpio-sm" alt='Scorpio-sm' > </li>
+						</a>
 				
 						<!-- Sagittarius -->	
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Sagittarius" id='Sagittarius' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/saggitarius.jpg' alt='Sagittarius'> </li>
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Sagittarius" id='Sagittarius' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/sagittarius.png' class="sagittarius img-responsive" id= "sagittarius"alt='Sagittarius'> </li>
+							<li> <img src='img/sagittarius-sm.png' class="img-responsive" id="sagittarius-sm" alt="Sagittarius" > </li>
+						</a>
 				
 						<!-- Capricorn	 -->
-						<a href="#" data-toggle="tooltip" data-placement="top" title="Capricorn" id='Capricorn' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/capricorn.jpg' alt='Capricorn'> </li>
-					
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" title="Capricorn" id='Capricorn' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/capricorn.png' class="capricorn img-responsive" id="capricorn" alt='Capricorn'> </li>
+							<li> <img src='img/capricorn-sm.png' class="img-responsive" id="capricorn-sm" alt='Capricorn' > </li>
+						</a>
+
 						<!-- Aquarius -->
-						<a href="#" data-toggle="tooltip" data-placement="top" title="Aquarius" id='Aquarius' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/aquarius.jpg' alt='Aquarius'> </li>
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" title="Aquarius" id='Aquarius' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/aquarius.png' class="aquarius img-responsive" id="aquarius" alt='Aquarius'> </li>
+							<li> <img src='img/aquarius-sm.png' class="img-responsive" id="aquarius-sm" alt='Aquarius' > </li>
+						</a>
 					
 						<!-- Pisces -->
-						<a href="#" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Pisces" id='Pisces' onclick='zodiac(this.id)'>
-						<li id='animate'> <img src = 'img/pisces.jpg' alt='Pisces'> </li>
-				
-				</div>
+						<a href="#" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" data-placement="bottom" title="Pisces" id='Pisces' onclick='zodiac(this.id)'>
+							<li> <img src = 'img/pisces.png' class="pisces img-responsive" id="pisces" alt='Pisces'> </li>
+							<li> <img src='img/pisces-sm.png' class="img-responsive" id="pisces-sm" alt='Pisces' > </li>
+						</a>
 
-<!-- Displays each zodiac sign -->
-<div class="col-lg-5 col-md-5 col-sm-5">
-	<h2 id='name' class='back'></h2>
-		<div class='back'>
-			<h4 id='month'></h4>
-				<p id='personality'></p>
-				<p id='forecast'></p>
-				<p id='love' ></p>
-		</div>
-</div>
+					</div>
+
+					<!-- Displays each zodiac sign -->
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h2 class="modal-title" id='name' class='back'></h2>
+					      </div>
+					      <div class="modal-body">
+							<h4 id='month'></h4>
+								<p id='personality'></p>
+								<p id='forecast'></p>
+								<p id='love'></p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+
+					  </div>
+					</div> <!-- end modal -->
 				
 				</div> <!-- end row -->
-	
 			</ul> <!-- end ul -->
-	
 	</div>	<!-- end container -->
 
-	
-
-
-<!-- Jquery -->
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<!-- Bootstrap javascript -->
-<script src="js/bootstrap.js"></script>
+<!-- Javascript -->
 <script type="text/javascript" src="js/main.js"></script> 
 
 <!-- Latest compiled and minified JavaScript -->
