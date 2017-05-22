@@ -1,3 +1,7 @@
+.row {
+	text-align: center;
+	margin: 0 auto;
+}
 body {
   text-align: center;
   margin: 0px auto;
@@ -13,8 +17,8 @@ ul li {
 	margin-top: 50px;
 }
 
-.title {
-	color: #050305;
+.title { 
+	color: pink;
 	font-family: 'Monofett', cursive;
 	font-size: 375%;
 }
@@ -24,7 +28,7 @@ ul li {
 }
 
 .background {
-  background-image: url("../img/cover2.jpg");
+  background-image: url("../img/sparkle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -63,6 +67,7 @@ ul li {
 .capricorn,
 .aquarius,
 .pisces{
+	border: 1px solid white;
 	background-color: black;
 	border-radius: 5px;
 }

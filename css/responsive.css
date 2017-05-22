@@ -1,4 +1,8 @@
 @media (max-width: 470px) {
+	.row {
+		position: relative;
+		right: 20px;
+	}
 	#aries,
 	#taurus,
 	#gemini,
@@ -28,6 +32,7 @@
 	#pisces-sm {
 		display: inline-block;	
 		background-color: black;
+		border: 1px solid white;
 		border-radius: 5px;
 
 	}
